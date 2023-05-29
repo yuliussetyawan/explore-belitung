@@ -547,6 +547,7 @@ Footer
   text-align: center;
   padding-left: 2rem;
   padding-right: 2rem;
+  background: var(--stroke);
 }
 
 .footer-links,
