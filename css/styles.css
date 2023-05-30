@@ -179,6 +179,124 @@ ul {
 
 /*
 =============== 
+Navbar
+===============
+*/
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: var(--stroke);
+  width: 100%;
+  box-shadow: var(--dark-shadow);
+  z-index: 1;
+}
+
+.nav-icons {
+  display: none;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  /* so the button doesn't have stretch effect */
+  align-items: center;
+}
+
+.nav-logo{
+  margin-bottom: 0;
+}
+
+.nav-center {
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.nav-toggle {
+  background: transparent;
+  border: transparent;
+  color: var(--headline);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.nav-toggle:hover {
+  transform: scale(1.2);
+}
+
+.nav-link {
+  display: block;
+  text-transform: capitalize;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  letter-spacing: var(--spacing);
+  transition: var(--transition);
+  color: var(--paragraph);
+}
+
+.nav-link:hover {
+  padding-left: 2.5rem;
+  background: var(--clr-hero);
+  color: var(--headline);
+}
+
+.nav-links {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.show-links {
+  height: 300px;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar {
+    padding: 1rem 2rem;
+  }
+  .nav-logo{
+    font-size: 3rem;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .nav-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-header {
+    padding: 0 0;
+  }
+  .nav-links {
+    display: flex;
+    height: auto;
+  }
+  .nav-link {
+    padding: 0 0;
+    margin-right: 0.7rem;
+  }
+  .nav-link:hover {
+    padding-left: 0;
+    background: transparent;
+  }
+  .nav-icons {
+    display: flex;
+  }
+  .nav-icon {
+    font-size: 1.5rem;
+    margin-right: 0.7rem;
+    transition: var(--transition);
+  }
+  .nav-icon:hover {
+    color: var(--headline);
+  }
+}
+/*
+=============== 
 Hero
 ===============
 */
@@ -287,9 +405,6 @@ Services
 */
 .services {
   background: var(--clr-hero);
-}
-
-.service {
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -587,4 +702,3 @@ Footer
   color: var(--headline);
   letter-spacing: var(--spacing);
 }
-
