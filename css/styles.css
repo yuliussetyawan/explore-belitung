@@ -178,6 +178,75 @@ ul {
 }
 
 /*
+=====================
+Animation
+=====================
+*/
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-200px);
+    opacity: 0.5;
+  }
+  75% {
+    transform: translateX(50px);
+    opacity: 0.75;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(200px);
+    opacity: 0.5;
+  }
+  75% {
+    transform: translateX(-50px);
+    opacity: 0.75;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes show {
+  0% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/*
 =============== 
 Navbar
 ===============
@@ -204,7 +273,7 @@ Navbar
   align-items: center;
 }
 
-.nav-logo{
+.nav-logo {
   margin-bottom: 0;
 }
 
@@ -221,6 +290,7 @@ Navbar
   font-size: 1.5rem;
   cursor: pointer;
   transition: var(--transition);
+  animation: bounce 2s ease infinite;
 }
 
 .nav-toggle:hover {
@@ -257,7 +327,7 @@ Navbar
   .navbar {
     padding: 1rem 2rem;
   }
-  .nav-logo{
+  .nav-logo {
     font-size: 3rem;
   }
   .nav-toggle {
@@ -347,8 +417,15 @@ Hero
   .hero-banner {
     padding: 0;
   }
+  .hero-banner h1 {
+    animation: slideFromRight 3s ease-in-out 1;
+  }
   .hero-banner p {
     max-width: 45rem;
+    animation: slideFromLeft 3s ease-in-out 1;
+  }
+  .hero-btn {
+    animation: show 3s linear 1;
   }
 }
 
