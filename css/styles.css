@@ -337,6 +337,7 @@ Navbar
   align-items: center;
 }
 
+
 .nav-logo {
   margin-bottom: 0;
 }
@@ -386,6 +387,12 @@ Navbar
 
 .show-links {
   height: 300px;
+}
+
+@media screen and (max-width: 991px){
+  .nav-logo{
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
