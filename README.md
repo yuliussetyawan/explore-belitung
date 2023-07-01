@@ -16,10 +16,10 @@ The hero section is the first thing visitors see when they land on the Explore B
 In the About Us section, we provide information about our travel agency and our mission. We share the story behind Explore Belitung and what sets us apart from other travel agencies. Visitors can learn more about our team, values, and commitment to providing unforgettable travel experiences.
 
 ### Featured Tours
-The Featured Tours section highlights some of the most popular and unique tours and destinations in Belitung. Each tour is showcased with a beautiful image, a brief description, and key details such as duration, price, and availability. Visitors can click on a tour to learn more and make a booking.
+The Featured Tours section highlights some of the most popular and unique tours and destinations in Belitung. Each tour is showcased with a beautiful image, a brief description, and key details such as duration, price, and availability. 
 
-### Contact Us
-The Contact Us section provides visitors with various ways to get in touch with us. We include a contact form where users can send us their inquiries, feedback, or requests for customized travel packages. Additionally, we provide our contact information, including phone numbers and email addresses, for direct communication.
+### Newsletter
+The Newsletter section allows visitors to subscribe and receive the latest updates, promotions, and news about our tours. It features an email submit form where anyone interested can enter their email address and stay connected with Explore Belitung.
 
 ### Gallery
 In the Gallery section, we display a collection of stunning photographs that showcase the breathtaking landscapes, beaches, and attractions of Belitung. Visitors can browse through the gallery to get a glimpse of the beauty that awaits them when they choose to explore Belitung.
